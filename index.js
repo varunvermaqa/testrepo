@@ -7,6 +7,6 @@ app.get('/', function (req, res) {
  res.send('hello world');
 });
 //listen to port 3000 by default
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3010,_=>console.log('running on 3010'));
  
 module.exports = app;
