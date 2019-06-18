@@ -4,11 +4,12 @@
    "version": "0.0.4",
    "private": true,
    "scripts": {
-      "start":"node index.js",
+      "start": "node index.js",
       "start:prod": "forever start --minUptime 1000 --spinSleepTime 1000 index.js"
    },
    "dependencies": {
-      "express": "3.12.0"
+      "express": "3.12.0",
+      "forever": "^1.0.0"
    },
    "devDependencies": {
       "mocha": "1.20.1",
