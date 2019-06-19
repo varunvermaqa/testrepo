@@ -1,3 +1,7 @@
 #!/bin/sh
 npm cache clear --force
+whoami
+sh << EOF
+whoami
 npm run start:prod
+EOF
