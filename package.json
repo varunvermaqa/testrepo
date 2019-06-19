@@ -5,11 +5,12 @@
    "private": true,
    "scripts": {
       "start": "node index.js",
-      "start:prod": "forever start --minUptime 1000 --spinSleepTime 1000 index.js"
+      "start:prod": "pm2 start npm --name=testrepo -- run start"
    },
    "dependencies": {
       "express": "3.12.0",
-      "forever": "^1.0.0"
+      "forever": "^1.0.0",
+      "pm2": "^3.5.1"
    },
    "devDependencies": {
       "mocha": "1.20.1",
